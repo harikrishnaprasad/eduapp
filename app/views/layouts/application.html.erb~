@@ -42,16 +42,16 @@
       <div class="navbar-inner">
         <div class="container-fluid">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
+            <span img tag="Facebook-48.png" class="img-rounded">></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#">Eduapp</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%#= link_to "Link1", "/path1"  %></li>
+              <li><%#= link_to "Link2", "/path2"  %></li>
+              <li><%#= link_to "Link3", "/path3"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -62,11 +62,12 @@
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+            <ul class="nav nav-list nav-justified">
+              <li class="nav-header"></li>
+              <li><%= link_to "profile", "/users/sign_in"%></li>
+              <li><%= link_to "preferences", "/users/password/new"  %></li>
+              <li><%= link_to "couplings", "/users/password/edit"  %></li>
+	     <li><%= link_to "Account", "/users/password/edit"  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
