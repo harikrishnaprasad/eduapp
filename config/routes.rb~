@@ -1,6 +1,6 @@
 Eduapp::Application.routes.draw do
   resources :profiles
-  
+  resources :abouts
 
   devise_for :users
 
