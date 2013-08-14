@@ -1,4 +1,7 @@
 Eduapp::Application.routes.draw do
+  resources :homes
+
+
   resources :profiles
   
 
